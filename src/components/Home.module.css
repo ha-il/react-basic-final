@@ -1,0 +1,44 @@
+.charactersContainer {
+  width: 90vw;
+  padding-top: 3rem;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.character {
+  background: linear-gradient(45deg, #808080, #d3d3d3, #808080);
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.character:hover {
+  box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* 반응형 */
+@media (min-width: 600px) {
+  .charactersContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .charactersContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .charactersContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
