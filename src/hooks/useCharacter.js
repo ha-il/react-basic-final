@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { CHARACTER_API_URL } from '../constants';
+import { CHARACTERS_API_URL } from '../constants';
 import { useParams } from 'react-router-dom';
 
 const useCharacter = () => {
@@ -18,7 +18,7 @@ const useCharacter = () => {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch(CHARACTER_API_URL + id);
+        const response = await fetch(`${CHARACTERS_API_URL}/${id}`);
         if (!response.ok) {
           throw new Error('데이터를 불러오는 데 실패했습니다.');
         }

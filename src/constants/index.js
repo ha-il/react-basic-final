@@ -1,6 +1,5 @@
-export const CHARACTERS_API_URL = process.env.REACT_APP_CHARACTERS_API_URL;
-
-export const CHARACTER_API_URL = process.env.REACT_APP_CHARACTER_API_URL;
+export const CHARACTERS_API_URL =
+  'https://marvel-proxy.nomadcoders.workers.dev/v1/public/characters';
 
 export const PALETTE = {
   '#f9ca24': '#f6e58d',
