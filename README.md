@@ -6,7 +6,7 @@
 
 페이지를 나타내는 `Home` 컴포넌트는 오직 UI만 그려내길 원했습니다. 데이터를 불러오는 것 같은 로직에 관련된 코드를 따로 분리하고 싶었습니다. `useCharacters`라는 커스텀 훅을 만들어 캐릭터 데이터를 불러오는 로직을 분리했습니다.
 
-```js
+```jsx
 const Home = () => {
   // 데이터를 불러오는 로직을 useCharacters 커스텀 훅으로 대체
   const { characters, loading, error } = useCharacters();
